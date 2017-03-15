@@ -1,0 +1,16 @@
+language: java
+sudo: false
+notifications:
+  hipchat:
+    rooms:
+      secure: hm9zft+uorlrt3CWfsNvUnINhnGe0Xhbvbf1MjEPSIL+vWXZnpYkOfAQc0+u8EQOctpwpfw3efuDQbKwZ3CWKYXBLHgZzZLFmdGihKxZhqucQyv2RsUrCae4/ZSBJNy2V9LdgXBMt/lzZOQSzfazGcX8c7nD4loRr/aHJHcNl94P6DZ2NkuDbdsNIX51lTMirkmpjYA4WKSWZlgIcQ7hZiokHL8Htfd3OU+pIS5M3d1S/L9QQDB3kHM1qIgzjYLEWN4A2xtlaq9BzGRER2EcD8l49/vVDFas79XUrGpvSXAV37BkLv84n7Tr1QcKSBBKyOs5AUI2YGcL/hgQ+/qznUwA2kOf/gAceobgFlgdTus/YH16V9tdEvLGndDe8mfXQTYYox0au2ro3xNInaPagBWkJFaYNw1tXbRr86a8EIqFOG3Oc+UcorILiIjjNdHcT+S1s1L1WpBvu6IyTbJed3OgjVpvqpgYhronHUJ2bpRgad3tG1kxOuuhdLFatP/NEvrfgE8yImi8smI6sbs0gktyu++mhPeZpzkWeB/smIxvO3N6pi/ALGLvR7vSklEVrxIFpM77ovUQ4bScDDFs8nhsPV7fanOxsAlysWWcKuDmoIFANJgfQCifa+MoIceoS7Dv9Qj/lvCpNiFO0IlGAYjtiYgqcULiydhYltlnTgY=
+deploy:
+  provider: releases
+  api_key:
+    secure: b2giegQMr31s5WIGfbYZggp7bbGVWb5NnaWC8C5B2gX3kqQvW26QlOXIbXq6sxVmzGmRUfqb1XBLcrtH0QPNQLI23o087S3/hAmQs/Xg7fKZPNdqN/zflTh1jFawWlH4t0y+YuYwuNICjYZ9qy3FPhek+p3GaWMbUs/FwO3RH6YGhd/ABKMQefHkNu060fjuvUz9sUzayMrtFTWhwJJIuL0rp/z8iVVksEa1gmGYOLWOnTHrOj5aGp+ogHVHbPQ5AT8pzScwsa/tO5H574vYn2bK5gFXRAnvy1f0PNfkKdP+cI148J1+7zIytWund67BZTVCanXAAkwKtn4nebW734JsmJ2fdFrgrhpFsFYqYuVvK0J/aE6MiaDgfUIXJSRQlPiMOSur02CvZSq0qVIOFotlgBCc8tbb0GjC4BNz1rv4N4wMWjeWxjOhLTd5n1DuDxI2aLjI6F1NPA/mI6CO5MBVgXEuA9cHocp2OtgW32mMzuSIZjK08IhWHCeAuGF1YT4uEhBsUqBS8nigVIYfXWiSv5NK9AjAosLLIIHqpqA1Nd8IfCCGpOHIHA59JyDn/XjhVspIEhBkA8crq9SNxMwIZOTPn34QLXlMCDZZN43G5GBxOydYbZ8wK+wuWV7P/JSxUkXJ65Nt520AwVTvaEka9GIHzc5nNPYqQxIaEa0=
+  file: build/libs/xlr-skytap-plugin-1.0.0-beta.jar
+    skip_cleanup: true
+    on:
+      all_branches: true
+      tags: true
+      repo: xebialabs-community/xlr-skytap-plugin
