@@ -9,8 +9,8 @@ deploy:
   api_key:
     secure: b2giegQMr31s5WIGfbYZggp7bbGVWb5NnaWC8C5B2gX3kqQvW26QlOXIbXq6sxVmzGmRUfqb1XBLcrtH0QPNQLI23o087S3/hAmQs/Xg7fKZPNdqN/zflTh1jFawWlH4t0y+YuYwuNICjYZ9qy3FPhek+p3GaWMbUs/FwO3RH6YGhd/ABKMQefHkNu060fjuvUz9sUzayMrtFTWhwJJIuL0rp/z8iVVksEa1gmGYOLWOnTHrOj5aGp+ogHVHbPQ5AT8pzScwsa/tO5H574vYn2bK5gFXRAnvy1f0PNfkKdP+cI148J1+7zIytWund67BZTVCanXAAkwKtn4nebW734JsmJ2fdFrgrhpFsFYqYuVvK0J/aE6MiaDgfUIXJSRQlPiMOSur02CvZSq0qVIOFotlgBCc8tbb0GjC4BNz1rv4N4wMWjeWxjOhLTd5n1DuDxI2aLjI6F1NPA/mI6CO5MBVgXEuA9cHocp2OtgW32mMzuSIZjK08IhWHCeAuGF1YT4uEhBsUqBS8nigVIYfXWiSv5NK9AjAosLLIIHqpqA1Nd8IfCCGpOHIHA59JyDn/XjhVspIEhBkA8crq9SNxMwIZOTPn34QLXlMCDZZN43G5GBxOydYbZ8wK+wuWV7P/JSxUkXJ65Nt520AwVTvaEka9GIHzc5nNPYqQxIaEa0=
   file: build/libs/xlr-skytap-plugin-1.0.0-beta.jar
-    skip_cleanup: true
-    on:
-      all_branches: true
-      tags: true
-      repo: xebialabs-community/xlr-skytap-plugin
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+    repo: xebialabs-community/xlr-skytap-plugin
