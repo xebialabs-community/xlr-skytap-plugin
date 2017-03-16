@@ -1,0 +1,10 @@
+[
+  {
+    "type":"skytap.Authentication",
+    "url":"https://cloud.skytap.com",
+    "username":"username",
+    "password":"password",
+    "title":"Skytap",
+    "id":"Configuration/Custom/Configuration891542742"
+  }
+]

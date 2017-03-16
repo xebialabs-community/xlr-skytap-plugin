@@ -26,4 +26,3 @@ license {
     excludes(["**/*.json"])
 }
 
-

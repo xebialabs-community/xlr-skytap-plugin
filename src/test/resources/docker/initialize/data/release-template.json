@@ -1,0 +1,141 @@
+[
+   {
+      "id":"Applications\/Release182240567",
+      "type":"xlrelease.Release",
+      "$createdBy":"admin",
+      "$createdAt":"2017-03-15T13:44:46.731-0600",
+      "$lastModifiedBy":"admin",
+      "$lastModifiedAt":"2017-03-16T08:51:45.018-0600",
+      "title":"Skytap",
+      "scheduledStartDate":"2017-03-15T09:00:00-06:00",
+      "flagStatus":"OK",
+      "maxConcurrentReleases":100,
+      "releaseTriggers":[
+
+      ],
+      "teams":[
+         {
+            "id":"Applications\/Release182240567\/Team507897377",
+            "type":"xlrelease.Team",
+            "teamName":"Release Admin",
+            "members":[
+
+            ],
+            "roles":[
+
+            ],
+            "permissions":[
+               "release#edit",
+               "release#start",
+               "release#reassign_task",
+               "template#view",
+               "release#edit_security",
+               "release#abort",
+               "release#view",
+               "release#edit_task"
+            ]
+         },
+         {
+            "id":"Applications\/Release182240567\/Team420849646",
+            "type":"xlrelease.Team",
+            "teamName":"Template Owner",
+            "members":[
+               "admin"
+            ],
+            "roles":[
+
+            ],
+            "permissions":[
+               "template#edit",
+               "template#view",
+               "template#edit_triggers",
+               "template#edit_security",
+               "template#create_release"
+            ]
+         }
+      ],
+      "memberViewers":[
+
+      ],
+      "roleViewers":[
+
+      ],
+      "attachments":[
+
+      ],
+      "phases":[
+         {
+            "id":"Applications\/Release182240567\/Phase913068675",
+            "type":"xlrelease.Phase",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-15T13:44:46.919-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-15T13:44:51.641-0600",
+            "title":"Skytap",
+            "flagStatus":"OK",
+            "tasks":[
+               {
+                  "id":"Applications\/Release182240567\/Phase913068675\/Task94783554",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-16T08:51:58.204-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-16T08:51:58.204-0600",
+                  "title":"User List",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase913068675",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase913068675\/Task94783554\/PythonScript",
+                     "type":"skytap.UserList",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-16T08:51:58.205-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-16T08:51:58.205-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase913068675\/Task94783554",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration891542742"
+                  }
+               }
+            ],
+            "release":"Applications\/Release182240567",
+            "status":"PLANNED",
+            "color":"#009CDB"
+         }
+      ],
+      "queryableStartDate":"2017-03-15T09:00:00-06:00",
+      "realFlagStatus":"OK",
+      "status":"TEMPLATE",
+      "tags":[
+
+      ],
+      "variables":[
+
+      ],
+      "calendarPublished":false,
+      "tutorial":false,
+      "abortOnFailure":false,
+      "allowConcurrentReleasesFromTrigger":true,
+      "runningTriggeredReleasesCount":0,
+      "createdFromTrigger":false,
+      "extensions":[
+
+      ]
+   }
+]

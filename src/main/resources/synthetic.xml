@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+-->
+<synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd"
+           xmlns="http://www.xebialabs.com/deployit/synthetic"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Skytap Configuration -->
+    <type type="skytap.Authentication" extends="xlrelease.Configuration">
+        <property name="url" label="Skytap REST API URL" required="true" description="Skytap API URL."/>
+        <property name="username" label="Username" required="true" description="Username for authentication on Skytap."/>
+        <property name="password" label="Password" required="true" password="true" description="Password or API Security Token for authentication on Skytap."/>
+    </type>
+
+    <!-- Skytap Task Configurations -->
+    <type type="skytap.Task" extends="xlrelease.PythonScript" virtual="true">
+        <property name="scriptLocation" default="skytap/SkytapTask.py" hidden="true"/>
+        <property name="iconLocation" default="skytap/skytap-logo.png" hidden="true"/>
+        <property name="skytap_authentication" category="input" label="Skytap Authentication" referenced-type="skytap.Authentication" kind="ci" required="true" description="Skytap Authentication."/>
+        <property name="output" category="output" kind="string" size="large" description="The output returned from execution of the Skytap task."/>
+    </type>
+
+    <type type="skytap.UserList" extends="skytap.Task" label="User List"/>
+</synthetic>
