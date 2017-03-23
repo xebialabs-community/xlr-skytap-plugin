@@ -5,7 +5,7 @@
       "$createdBy":"admin",
       "$createdAt":"2017-03-15T13:44:46.731-0600",
       "$lastModifiedBy":"admin",
-      "$lastModifiedAt":"2017-03-16T08:51:45.018-0600",
+      "$lastModifiedAt":"2017-03-23T14:43:52.825-0600",
       "title":"Skytap",
       "scheduledStartDate":"2017-03-15T09:00:00-06:00",
       "flagStatus":"OK",
@@ -70,8 +70,8 @@
             "$createdBy":"admin",
             "$createdAt":"2017-03-15T13:44:46.919-0600",
             "$lastModifiedBy":"admin",
-            "$lastModifiedAt":"2017-03-15T13:44:51.641-0600",
-            "title":"Skytap",
+            "$lastModifiedAt":"2017-03-23T14:52:56.221-0600",
+            "title":"Skytap Basics",
             "flagStatus":"OK",
             "tasks":[
                {
@@ -110,8 +110,910 @@
                      "$lastModifiedBy":"admin",
                      "$lastModifiedAt":"2017-03-16T08:51:58.205-0600",
                      "customScriptTask":"Applications\/Release182240567\/Phase913068675\/Task94783554",
-                     "skytap_authentication":"Configuration\/Custom\/Configuration891542742"
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410"
                   }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase913068675\/Task220129765",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-17T10:07:18.780-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T09:32:07.656-0600",
+                  "title":"Template List",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase913068675",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+                     "pythonScript.output":"${TEMPLATE_LIST}"
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase913068675\/Task220129765\/PythonScript",
+                     "type":"skytap.TemplateList",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-17T10:07:18.782-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T09:32:07.657-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase913068675\/Task220129765",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase913068675\/Task846706399",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-23T07:58:24.612-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T07:58:24.612-0600",
+                  "title":"Asset List",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase913068675",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase913068675\/Task846706399\/PythonScript",
+                     "type":"skytap.AssetList",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-23T07:58:24.614-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-23T07:58:24.614-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase913068675\/Task846706399",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase913068675\/Task247731309",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T10:11:07.773-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T10:11:07.773-0600",
+                  "title":"Environment List",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase913068675",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase913068675\/Task247731309\/PythonScript",
+                     "type":"skytap.EnvironmentList",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-21T10:11:07.775-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T10:11:07.775-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase913068675\/Task247731309",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase913068675\/Task311921259",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-16T10:56:09.407-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-16T10:56:09.407-0600",
+                  "title":"Project List",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase913068675",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase913068675\/Task311921259\/PythonScript",
+                     "type":"skytap.ProjectList",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-16T10:56:09.410-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-16T10:56:09.410-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase913068675\/Task311921259",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase913068675\/Task443301036",
+                  "type":"xlrelease.Task",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:45:50.917-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T14:52:54.194-0600",
+                  "title":"Pause",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase913068675",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ]
+               }
+            ],
+            "release":"Applications\/Release182240567",
+            "status":"PLANNED",
+            "color":"#009CDB"
+         },
+         {
+            "id":"Applications\/Release182240567\/Phase748616981",
+            "type":"xlrelease.Phase",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-23T08:00:04.722-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-23T14:52:58.589-0600",
+            "title":"Create Environment",
+            "flagStatus":"OK",
+            "tasks":[
+               {
+                  "id":"Applications\/Release182240567\/Phase748616981\/Task60042554",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T10:22:22.803-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T12:49:13.624-0600",
+                  "title":"Create Environment",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase748616981",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+                     "pythonScript.output":"${CREATE_ENV_OUTPUT}"
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase748616981\/Task60042554\/PythonScript",
+                     "type":"skytap.CreateEnvironment",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-21T10:22:22.804-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T12:49:13.624-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase748616981\/Task60042554",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "template_id":"212729",
+                     "project_id":"${PROJECT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase748616981\/Task282454195",
+                  "type":"xlrelease.ScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T08:32:05.841-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T12:49:52.525-0600",
+                  "title":"Parse Environment ID",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase748616981",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "script":"import json\nenv_json=json.loads(releaseVariables['CREATE_ENV_OUTPUT'])\nreleaseVariables['ENVIRONMENT_ID']=env_json['id']"
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase748616981\/Task385151651",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-23T08:24:20.885-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T08:32:51.417-0600",
+                  "title":"Environment VM List",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase748616981",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+                     "pythonScript.output":"${VM_LIST}"
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase748616981\/Task385151651\/PythonScript",
+                     "type":"skytap.EnvironmentVMList",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-23T08:24:20.888-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-23T08:32:51.417-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase748616981\/Task385151651",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase748616981\/Task492271720",
+                  "type":"xlrelease.ScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T08:32:05.841-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T09:15:04.081-0600",
+                  "title":"Parse VM IDs",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase748616981",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "script":"import json\nvm_ids = []\nvms=json.loads(releaseVariables['VM_LIST'])\nfor vm in vms:\n   vm_ids.append(vm['id'])\nreleaseVariables['VM_IDS']=vm_ids"
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase748616981\/Task419960341",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-23T11:41:33.219-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T11:41:48.828-0600",
+                  "title":"Get Environment",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase748616981",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase748616981\/Task419960341\/PythonScript",
+                     "type":"skytap.GetEnvironment",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-23T11:41:33.221-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-23T11:41:48.829-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase748616981\/Task419960341",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase748616981\/Task23044689",
+                  "type":"xlrelease.Task",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:45:50.917-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T08:24:44.440-0600",
+                  "title":"Pause",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase748616981",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ]
+               }
+            ],
+            "release":"Applications\/Release182240567",
+            "status":"PLANNED",
+            "color":"#009CDB"
+         },
+         {
+            "id":"Applications\/Release182240567\/Phase515442755",
+            "type":"xlrelease.Phase",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-17T10:09:21.962-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-23T08:24:44.467-0600",
+            "title":"Create Project",
+            "flagStatus":"OK",
+            "tasks":[
+               {
+                  "id":"Applications\/Release182240567\/Phase515442755\/Task254786063",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-17T10:19:56.537-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T08:56:21.756-0600",
+                  "title":"Create Project",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase515442755",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+                     "pythonScript.output":"${CREATE_PROJECT_OUTPUT}"
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase515442755\/Task254786063\/PythonScript",
+                     "type":"skytap.CreateProject",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-17T10:19:56.541-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T08:56:21.757-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase515442755\/Task254786063",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "project_name":"FOO"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase515442755\/Task103374777",
+                  "type":"xlrelease.ScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T08:32:05.841-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T12:48:26.041-0600",
+                  "title":"Parse Project ID",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase515442755",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "script":"import json\nproject_json=json.loads(releaseVariables['CREATE_PROJECT_OUTPUT'])\nreleaseVariables['PROJECT_ID']=project_json['id']"
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase515442755\/Task325845193",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:45:02.238-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T10:22:33.709-0600",
+                  "title":"Add Template To Project",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase515442755",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase515442755\/Task325845193\/PythonScript",
+                     "type":"skytap.AddTemplateToProject",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-21T09:45:02.240-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T10:22:33.710-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase515442755\/Task325845193",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "template_id":"212729",
+                     "project_id":"${PROJECT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase515442755\/Task565592396",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T12:55:17.848-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T12:57:24.708-0600",
+                  "title":"Add Environment To Project",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase515442755",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase515442755\/Task565592396\/PythonScript",
+                     "type":"skytap.AddEnvironmentToProject",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-21T12:55:17.851-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T12:57:24.709-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase515442755\/Task565592396",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}",
+                     "project_id":"${PROJECT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase515442755\/Task44356150",
+                  "type":"xlrelease.Task",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:45:50.917-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T07:59:53.265-0600",
+                  "title":"Pause",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase515442755",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ]
+               }
+            ],
+            "release":"Applications\/Release182240567",
+            "status":"PLANNED",
+            "color":"#009CDB"
+         },
+         {
+            "id":"Applications\/Release182240567\/Phase532311472",
+            "type":"xlrelease.Phase",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-23T11:53:12.200-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-23T14:52:45.677-0600",
+            "title":"Start Environment",
+            "flagStatus":"OK",
+            "tasks":[
+               {
+                  "id":"Applications\/Release182240567\/Phase532311472\/Task879260234",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-23T11:11:15.759-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T11:11:38.399-0600",
+                  "title":"Start Environment",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase532311472",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase532311472\/Task879260234\/PythonScript",
+                     "type":"skytap.StartEnvironment",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-23T11:11:15.761-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-23T11:11:38.401-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase532311472\/Task879260234",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase532311472\/Task677784900",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-23T11:35:56.471-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T11:36:07.959-0600",
+                  "title":"Wait For Running Environment",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase532311472",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase532311472\/Task677784900\/PythonScript",
+                     "type":"skytap.WaitForRunningEnvironment",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-23T11:35:56.473-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-23T11:36:07.961-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase532311472\/Task677784900",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase532311472\/Task560079043",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-23T11:41:33.219-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T11:53:36.945-0600",
+                  "title":"Get Environment",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase532311472",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase532311472\/Task560079043\/PythonScript",
+                     "type":"skytap.GetEnvironment",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-23T11:41:33.221-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-23T11:41:48.829-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase532311472\/Task560079043",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase532311472\/Task77955928",
+                  "type":"xlrelease.Task",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:45:50.917-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T14:52:42.710-0600",
+                  "title":"Pause",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase532311472",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ]
+               }
+            ],
+            "release":"Applications\/Release182240567",
+            "status":"PLANNED",
+            "color":"#009CDB"
+         },
+         {
+            "id":"Applications\/Release182240567\/Phase210796477",
+            "type":"xlrelease.Phase",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-23T08:00:36.456-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-23T14:53:00.780-0600",
+            "title":"Cleanup",
+            "flagStatus":"OK",
+            "tasks":[
+               {
+                  "id":"Applications\/Release182240567\/Phase210796477\/Task808797113",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:08:27.270-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T09:08:37.099-0600",
+                  "title":"Delete Project",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase210796477",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase210796477\/Task808797113\/PythonScript",
+                     "type":"skytap.DeleteProject",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-21T09:08:27.273-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T09:08:37.104-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase210796477\/Task808797113",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "project_id":"${PROJECT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase210796477\/Task767915231",
+                  "type":"xlrelease.CustomScriptTask",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T13:21:38.782-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-21T13:21:52.955-0600",
+                  "title":"Delete Environment",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase210796477",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ],
+                  "pythonScript":{
+                     "id":"Applications\/Release182240567\/Phase210796477\/Task767915231\/PythonScript",
+                     "type":"skytap.DeleteEnvironment",
+                     "$createdBy":"admin",
+                     "$createdAt":"2017-03-21T13:21:38.784-0600",
+                     "$lastModifiedBy":"admin",
+                     "$lastModifiedAt":"2017-03-21T13:21:52.957-0600",
+                     "customScriptTask":"Applications\/Release182240567\/Phase210796477\/Task767915231",
+                     "skytap_authentication":"Configuration\/Custom\/Configuration283855410",
+                     "environment_id":"${ENVIRONMENT_ID}"
+                  }
+               },
+               {
+                  "id":"Applications\/Release182240567\/Phase210796477\/Task545644840",
+                  "type":"xlrelease.Task",
+                  "$createdBy":"admin",
+                  "$createdAt":"2017-03-21T09:45:50.917-0600",
+                  "$lastModifiedBy":"admin",
+                  "$lastModifiedAt":"2017-03-23T14:52:58.575-0600",
+                  "title":"Pause",
+                  "owner":"admin",
+                  "flagStatus":"OK",
+                  "comments":[
+
+                  ],
+                  "container":"Applications\/Release182240567\/Phase210796477",
+                  "attachments":[
+
+                  ],
+                  "status":"PLANNED",
+                  "overdueNotified":false,
+                  "waitForScheduledStartDate":true,
+                  "hasBeenFlagged":false,
+                  "hasBeenDelayed":false,
+                  "failuresCount":0,
+                  "variableMapping":{
+
+                  },
+                  "tags":[
+
+                  ]
                }
             ],
             "release":"Applications\/Release182240567",
@@ -126,7 +1028,83 @@
 
       ],
       "variables":[
-
+         {
+            "id":"Applications\/Release182240567\/Variable596700847",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-21T08:56:21.533-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-21T08:56:21.533-0600",
+            "key":"CREATE_PROJECT_OUTPUT",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         },
+         {
+            "id":"Applications\/Release182240567\/Variable258916901",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-21T08:57:37.276-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-21T08:58:42.441-0600",
+            "key":"PROJECT_ID",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         },
+         {
+            "id":"Applications\/Release182240567\/Variable711741605",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-21T09:32:07.479-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-21T09:32:07.479-0600",
+            "key":"TEMPLATE_LIST",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         },
+         {
+            "id":"Applications\/Release182240567\/Variable150823668",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-21T12:49:13.434-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-21T12:49:13.434-0600",
+            "key":"CREATE_ENV_OUTPUT",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         },
+         {
+            "id":"Applications\/Release182240567\/Variable500009965",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-21T12:50:02.088-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-21T12:50:06.762-0600",
+            "key":"ENVIRONMENT_ID",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         },
+         {
+            "id":"Applications\/Release182240567\/Variable780729803",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-23T08:32:51.163-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-23T08:32:51.163-0600",
+            "key":"VM_LIST",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         },
+         {
+            "id":"Applications\/Release182240567\/Variable959638956",
+            "type":"xlrelease.StringVariable",
+            "$createdBy":"admin",
+            "$createdAt":"2017-03-23T08:44:30.253-0600",
+            "$lastModifiedBy":"admin",
+            "$lastModifiedAt":"2017-03-23T08:46:34.392-0600",
+            "key":"VM_IDS",
+            "requiresValue":false,
+            "showOnReleaseStart":false
+         }
       ],
       "calendarPublished":false,
       "tutorial":false,
@@ -134,6 +1112,8 @@
       "allowConcurrentReleasesFromTrigger":true,
       "runningTriggeredReleasesCount":0,
       "createdFromTrigger":false,
+      "scriptUsername":"admin",
+      "scriptUserPassword":"",
       "extensions":[
 
       ]

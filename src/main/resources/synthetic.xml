@@ -24,4 +24,51 @@
     </type>
 
     <type type="skytap.UserList" extends="skytap.Task" label="User List"/>
+    <type type="skytap.ProjectList" extends="skytap.Task" label="Project List"/>
+    <type type="skytap.TemplateList" extends="skytap.Task" label="Template List"/>
+    <type type="skytap.EnvironmentList" extends="skytap.Task" label="Environment List"/>
+    <type type="skytap.AssetList" extends="skytap.Task" label="Asset List"/>
+
+    <type type="skytap.CreateProject" extends="skytap.Task" label="Create Project">
+        <property name="project_name" category="input" label="Project Name" required="true" description="Name of the project to be created in Skytap."/>
+    </type>
+
+    <type type="skytap.CreateEnvironment" extends="skytap.Task" label="Create Environment">
+        <property name="template_id" category="input" label="Template ID" required="true" description="ID of the template to create the environment from."/>
+        <property name="project_id" category="input" label="Project ID" description="ID of the project to add the environment to ."/>
+    </type>
+
+    <type type="skytap.GetEnvironment" extends="skytap.Task" label="Get Environment">
+        <property name="environment_id" category="input" label="Environment ID" required="true" description="ID of the environment to be retrieved."/>
+    </type>
+
+    <type type="skytap.EnvironmentVMList" extends="skytap.Task" label="Environment VM List">
+        <property name="environment_id" category="input" label="Environment ID" required="true" description="ID of the environment to list the VMs for."/>
+    </type>
+
+    <type type="skytap.DeleteProject" extends="skytap.Task" label="Delete Project">
+        <property name="project_id" category="input" label="Project ID" required="true" description="ID of the project to be deleted in Skytap."/>
+    </type>
+
+    <type type="skytap.DeleteEnvironment" extends="skytap.Task" label="Delete Environment">
+        <property name="environment_id" category="input" label="Environment ID" required="true" description="ID of the environment to be deleted in Skytap."/>
+    </type>
+
+    <type type="skytap.AddTemplateToProject" extends="skytap.Task" label="Add Template To Project">
+        <property name="template_id" category="input" label="Template ID" required="true" description="ID of the template being added."/>
+        <property name="project_id" category="input" label="Project ID" required="true" description="ID of the project to add the template to."/>
+    </type>
+
+    <type type="skytap.StartEnvironment" extends="skytap.Task" label="Start Environment">
+        <property name="environment_id" category="input" label="Environment ID" required="true" description="The ID of the environment to start."/>
+    </type>
+
+    <type type="skytap.WaitForRunningEnvironment" extends="skytap.Task" label="Wait For Running Environment">
+        <property name="environment_id" category="input" label="Environment ID" required="true" description="The ID of the environment to wait on for running state."/>
+    </type>
+
+    <type type="skytap.AddEnvironmentToProject" extends="skytap.Task" label="Add Environment To Project">
+        <property name="environment_id" category="input" label="Environment ID" required="true" description="ID of the environment being added."/>
+        <property name="project_id" category="input" label="Project ID" required="true" description="ID of the project to add the environment to."/>
+    </type>
 </synthetic>
