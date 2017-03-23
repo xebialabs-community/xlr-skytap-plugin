@@ -18,63 +18,78 @@ Configures the credentials used to authenticate with the Skytap REST API. You sh
 ![SkytapAuthenticationConfiguration](images/SkytapAuthenticationConfiguration.png)
 
 ## Available Tasks
-The available tasks for interfacing with Skytap. These tasks utilize the Skytap REST API and the provided Skytap Authentication Configurations.
+The available tasks for interfacing with Skytap. These tasks utilize the Skytap REST API and the provided Skytap Authentication Configuration.
+
 ![SkytapTaskList](images/SkytapTaskList.png)
 
 #### Add Environment To Project 
 Adds the specified Environment to the specified Project.
+
 ![SkytapAddEnvironmentToProject](images/SkytapAddEnvironmentToProject.png)
 
 #### Add Template To Project 
 Adds the specified Template to the specified Project.
+
 ![SkytapAddTemplateToProject](images/SkytapAddTemplateToProject.png)
 
 #### Asset List 
 Lists the Assets visible to the authenticated user.
+
 ![SkytapAssetList](images/SkytapAssetList.png)
 
 #### Create Environment 
 Creates an Environment from the specified Template ID. Optionally you can specify a Project ID to add the Environment to.
+
 ![SkytapCreateEnvironment](images/SkytapCreateEnvironment.png)
 
 #### Create Project
 Creates a Project with the specified name.
+
 ![SkytapCreateProject](images/SkytapCreateProject.png)
 
 #### Delete Environment
 Deletes the specified Environment.
+
 ![SkytapDeleteEnvironment](images/SkytapDeleteEnvironment.png)
 
 #### Delete Project
 Deletes the specified Project.
+
 ![SkytapDeleteProject](images/SkytapDeleteProject.png)
 
 #### Environment List
 Lists the Environments visible to the authenticated user.
+
 ![SkytapEnvironmentList](images/SkytapEnvironmentList.png)
 
 #### Environment VM List
 Lists the VMs for the specified Environment.
+
 ![SkytapEnvironmentVMList](images/SkytapEnvironmentVMList.png)
 
 #### Get Environment
 Get the details of the specified Environment.
+
 ![SkytapGetEnvironment](images/SkytapGetEnvironment.png)
 
 #### Project List
 Lists the Projects visible to the authenticated user.
+
 ![SkytapProjectList](images/SkytapProjectList.png)
 
 #### Start Environment
 Starts the VMs in the specified Environment.
+
 ![SkytapStartEnvironment](images/SkytapStartEnvironment.png)
 
 #### Template List
 Lists the Templates visible to the authenticated user.
+
 ![SkytapTemplateList](images/SkytapTemplateList.png)
 
 #### User List
 Lists the Users visible to the authenticated user.
+
 ![SkytapUserList](images/SkytapUserList.png)
 
 ---
