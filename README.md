@@ -15,6 +15,7 @@ Copy the plugin JAR file into the `SERVER_HOME/plugins` directory of XL Release.
 
 ## Skytap Authentication
 Configures the credentials used to authenticate with the Skytap REST API. You should use the API security token shown on your [account](https://cloud.skytap.com/account) as the password. 
+
 ![SkytapAuthenticationConfiguration](images/SkytapAuthenticationConfiguration.png)
 
 ## Available Tasks
