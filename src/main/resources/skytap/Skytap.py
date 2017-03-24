@@ -92,30 +92,39 @@ class SkytapClient(object):
                                                 data=data)
 
     def skytap_deleteproject(self, variables):
-        return self.perform_delete_operation(endpoint="projects",
-                                                error_message="Failed to delete project [%s]." % variables['project_id'],
-                                                object_id=variables['project_id'])
+        return self.perform_delete_operation(endpoint="projects", object_id=variables['project_id'])
 
     def skytap_deleteenvironment(self, variables):
-        return self.perform_delete_operation(endpoint="configurations",
-                                                error_message="Failed to delete environment [%s]." % variables['environment_id'],
-                                                object_id=variables['environment_id'])
+        return self.perform_delete_operation(endpoint="configurations", object_id=variables['environment_id'])
 
     def skytap_addtemplatetoproject(self, variables):
-        return self.perform_post_operation(endpoint="projects/%s/templates/%s" % (variables['project_id'], variables['template_id']),
-                                                error_message="Failed to add template [%s] to project [%s]." % (variables['template_id'], variables['project_id']))
+        return self.perform_add_to_project_operation("templates", variables['project_id'], variables['template_id'])
 
     def skytap_addenvironmenttoproject(self, variables):
-        return self.perform_post_operation(endpoint="projects/%s/configurations/%s" % (variables['project_id'], variables['environment_id']),
-                                                error_message="Failed to add environment [%s] to project [%s]." % (variables['environment_id'], variables['project_id']))
+        return self.perform_add_to_project_operation("configurations", variables['project_id'], variables['environment_id'])
 
     def perform_post_operation(self, endpoint, error_message, object_id=None, json_data=None, data=None, headers=None):
-        return self.get_response_for_endpoint(method='POST', endpoint=endpoint, error_message=error_message, object_id=object_id, json_data=json_data, data=data, headers=headers)
+        return self.get_response_for_endpoint(
+            method='POST',
+            endpoint=endpoint,
+            error_message=error_message,
+            object_id=object_id,
+            json_data=json_data,
+            data=data,
+            headers=headers)
 
-    def perform_delete_operation(self, endpoint, error_message, object_id=None, json_data=None, data=None, headers=None):
-        return self.get_response_for_endpoint(method='DELETE', endpoint=endpoint, error_message=error_message, object_id=object_id, json_data=json_data, data=data, headers=headers)
+    def perform_delete_operation(self, endpoint, object_id, json_data=None, data=None, headers=None):
+        return self.get_response_for_endpoint(
+            method='DELETE', endpoint=endpoint,
+            error_message="Failed to delete %s [%s]." % (endpoint, object_id),
+            object_id=object_id,
+            json_data=json_data,
+            data=data,
+            headers=headers)
+
+    def perform_add_to_project_operation(self, endpoint, project_id, object_id):
+        full_endpoint="projects/%s/%s/%s" % (project_id, endpoint, object_id)
+        self.perform_post_operation(endpoint=full_endpoint, error_message="Failed to add %s [%s] to project [%s]." % (endpoint, object_id, project_id))
 
     def environment_runstate(self, variables, runstate):
-        print "passed runstate : %s" % runstate
-        print "actual runstate : %s" %json.loads(self.skytap_getenvironment(variables))['runstate']
         return json.loads(self.skytap_getenvironment(variables))['runstate'] == runstate

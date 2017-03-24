@@ -98,6 +98,8 @@ Lists the Users visible to the authenticated user.
 There is a basic Skytap Authentication configuration as well as a XL Release Template leveraging the current Skytap functionality available in Docker. 
 Execute: `./gradlew runDockerCompose` 
 
+![SkytapReleaseTemplate](images/SkytapReleaseTemplate.png)
+
 --- 
 
 ## References:
