@@ -82,9 +82,10 @@ class SkytapClient(object):
 
     def skytap_createproject(self, variables):
         data = '{"name":"%s"}' % variables['project_name']
-        return self.perform_post_operation(endpoint="projects.json",
+        response = self.perform_post_operation(endpoint="projects.json",
                                                 error_message="Failed to create project [%s]." % variables['project_name'],
                                                 data=data)
+        return {"output" : "%s" % json.loads(response)['id']}
 
     def skytap_createenvironment(self, variables):
         data = '{"template_id":"%s"' % variables['template_id']

@@ -13,4 +13,6 @@ from skytap.Skytap import SkytapClient
 skytap = SkytapClient.get_client(skytap_authentication)
 method = str(task.getTaskType()).lower().replace('.', '_')
 call = getattr(skytap, method)
-output = call(locals())
+response = call(locals())
+for key, value in response.items():
+    locals()[key] = value
