@@ -1,9 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!--
-    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
-    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+
+<!-- Copyright 2017 XEBIALABS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
+
 <synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd"
            xmlns="http://www.xebialabs.com/deployit/synthetic"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -35,7 +40,8 @@
 
     <type type="skytap.CreateEnvironment" extends="skytap.Task" label="Create Environment">
         <property name="template_id" category="input" label="Template ID" required="true" description="ID of the template to create the environment from."/>
-        <property name="project_id" category="input" label="Project ID" description="ID of the project to add the environment to ."/>
+        <property name="project_id" category="input" label="Project ID" description="ID of the project to add the environment to."/>
+        <property name="acquire_public_ip" category="input" label="Acquire Public IP?" kind="boolean" description="Should this environment acquire a public IP address?"/>
     </type>
 
     <type type="skytap.GetEnvironment" extends="skytap.Task" label="Get Environment">
@@ -52,6 +58,7 @@
 
     <type type="skytap.DeleteEnvironment" extends="skytap.Task" label="Delete Environment">
         <property name="environment_id" category="input" label="Environment ID" required="true" description="ID of the environment to be deleted in Skytap."/>
+        <property name="release_public_ips" category="input" label="Release Public IPs?" kind="boolean" description="Should public IP addresses be release with delete?"/>
     </type>
 
     <type type="skytap.AddTemplateToProject" extends="skytap.Task" label="Add Template To Project">
